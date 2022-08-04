@@ -1,6 +1,7 @@
 //import { versionInfo, refer_Artifacts_Desc } from "./help.js";
 import { currentVersion } from "../components/Changelog.js";
 import lodash from 'lodash';
+import { rule as adminRule, updateRecreationPlugin } from "./admin.js";
 import {
   rule as funRule,
   caihongpi, tiangou, dujitang,
@@ -24,6 +25,7 @@ import { rule as fbRule, fabing } from "./fabing.js";
 import { rule as jrrpRule, jrrp } from "./jrrp.js";
 import { rule as mywifeRule, whoismywife } from "./myWife.js";
 
+export { updateRecreationPlugin };
 export {
   caihongpi,
   tiangou,
@@ -62,6 +64,7 @@ let rule = {
     reg: "^#?(娱乐)?(命令|帮助|菜单|help|说明|功能|指令|使用说明)$",
     describe: "查看插件的功能",
   },
+  ...adminRule,
   ...funRule,
   ...newRule,
   ...amusementRule,
