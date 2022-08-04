@@ -1,6 +1,6 @@
 import { segment } from "oicq";
 import fetch from "node-fetch";
-import { ciku } from "../resources/fabing/fb_ciku.js";
+import { ciku } from "../../resources/fabing/fb_ciku.js";
 
 export const rule = {
   fabing: {

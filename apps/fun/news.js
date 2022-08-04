@@ -173,7 +173,7 @@ export async function news(e) {
       segment.image(url),
     ];
 
-    await this.reply(msg);
+    e.reply(msg);
 
     return true;
 }
