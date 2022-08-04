@@ -24,7 +24,7 @@ import { rule as cpRule, cp } from "./cpStory.js";
 import { rule as fbRule, fabing } from "./fabing.js";
 import { rule as jrrpRule, jrrp } from "./jrrp.js";
 import { rule as mywifeRule, whoismywife } from "./myWife.js";
-
+import { rule as tgyjRule, tgyj, chongsheng } from "./tgyj.js";
 export { updateRecreationPlugin };
 export {
   caihongpi,
@@ -54,6 +54,7 @@ export { cp };
 export { fabing };
 export { jrrp };
 export { whoismywife };
+export { tgyj, chongsheng };
 
 let rule = {
   versionInfo: {
@@ -73,6 +74,7 @@ let rule = {
   ...fbRule,
   ...jrrpRule,
   ...mywifeRule,
+  ...tgyjRule,
 };
 
 lodash.forEach(rule, (r) => {
