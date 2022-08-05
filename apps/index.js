@@ -3,7 +3,8 @@ import { currentVersion } from "../components/Changelog.js";
 import lodash from 'lodash';
 
 import { rule as adminRule, updateRecreationPlugin } from "./admin.js";
-import * as Fun from "./fun/index.js";
+
+import { FunRule } from "./fun/index.js";
 export * from "./fun/index.js";
 
 import { rule as tgyjRule, tgyj, chongsheng } from "./games/tgyj.js";
@@ -21,7 +22,7 @@ let rule = {
     describe: "查看插件的功能",
   },
   ...adminRule,
-  ...Fun.FunRule,
+  ...FunRule,
   ...tgyjRule,
 };
 
